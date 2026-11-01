@@ -43,7 +43,8 @@ Wichtig: Laut [Governance](https://pandas.pydata.org/about/governance.html) kön
 
 ## Activity 
 - **Latest Release:** pandas 3.1.0 vom 22.10.2026 ([pandas.pydata.org](https://pandas.pydata.org/), [Release notes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html))
--  **Open issues:** **Open pull requests** ([Issues](https://github.com/pandas-dev/pandas/issues), [Pull requests](https://github.com/pandas-dev/pandas/pulls))
+-  **Open issues:** 1.7k ([Issues](https://github.com/pandas-dev/pandas/issues)
+-  **Open pull requests:** 309 [Pull requests](https://github.com/pandas-dev/pandas/pulls))
 
 ## My way in
 - **How does a change get in?:** ([Contributing guide](https://pandas.pydata.org/docs/dev/development/contributing.html)):
@@ -55,7 +56,7 @@ Wichtig: Laut [Governance](https://pandas.pydata.org/about/governance.html) kön
 
 Bemerkenswert: pandas hat eine eigene Regel für KI-Tools. Man darf sie nutzen, muss aber angeben, welches Tool und Modell man verwendet hat, und darf in Diskussionen nicht die KI für sich sprechen lassen. 
 
-**Newcomer label:** 
+**Newcomer label:** Nein. Eine Suche nach `label:"good first issue"` in den [Issues](https://github.com/pandas-dev/pandas/issues) ergibt die Meldung "Invalid value `good first issue label`", das Label existiert also nicht (Stand: 01.11.2026). Das passt zum [Contributing guide](https://pandas.pydata.org/docs/dev/development/contributing.html): Er rät Neulingen, sich ein freies Issue zu suchen, das sie selbst interessiert, und verlinkt dazu den Artikel "Don't start with good first issues". Frei ist ein Issue, wenn es niemand zugewiesen ist und keine Labels wie `Need Triage` oder `Needs Discussion` hat. 
 
 
 
