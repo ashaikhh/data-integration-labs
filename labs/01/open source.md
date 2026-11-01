@@ -43,7 +43,7 @@ Wichtig: Laut [Governance](https://pandas.pydata.org/about/governance.html) kön
 
 ## Activity 
 - **Latest Release:** pandas 3.1.0 vom 22.10.2026 ([pandas.pydata.org](https://pandas.pydata.org/), [Release notes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html))
--  **Open issues:** **Open pull requests** [Issues](https://github.com/pandas-dev/pandas/issues), [Pull requests](https://github.com/pandas-dev/pandas/pulls))
+-  **Open issues:** **Open pull requests** ([Issues](https://github.com/pandas-dev/pandas/issues), [Pull requests](https://github.com/pandas-dev/pandas/pulls))
 
 ## My way in
 - **How does a change get in?:** ([Contributing guide](https://pandas.pydata.org/docs/dev/development/contributing.html)):
