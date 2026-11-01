@@ -47,7 +47,7 @@ Wichtig: Laut [Governance](https://pandas.pydata.org/about/governance.html) kön
 
 ## My way in
 - **How does a change get in?:** ([Contributing guide](https://pandas.pydata.org/docs/dev/development/contributing.html)):
-1. Ein passendes **Issue*+ finden. Es darf noch niemand zugewiesen sein und kein Label wie `Needs Triage` oder `Needs Discussion` haben.
+1. Ein passendes **Issue** finden. Es darf noch niemand zugewiesen sein und kein Label wie `Needs Triage` oder `Needs Discussion` haben.
 2. Das Issue mit dem Kommentar `/take` übernehmen. Ein Bot weist es dir zu, du darfst höchstens zwei gleichzeitig haben. 
 3. Das Repo **forken**, einen eigenen Branch anlegen und die Änderung machen, inklusive Tests.
 4. Einen **Pull Requests** öffnen, der das Issue verlinkt (z.B `closes #1234`) und mit einem Präfix wie `BUG:` oder `DOC:` beginnt.
