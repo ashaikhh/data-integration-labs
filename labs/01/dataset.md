@@ -1,4 +1,4 @@
-## Task 5 : Find a Dataset
+## Task 5 · Find a Dataset
 
 ### Where I searched
 
@@ -21,4 +21,21 @@ Ich wähle den Datensatz [Kinos, Leinwände, Sitzplätze der Kinos, Filmbesuche,
 
 - Er deckt ganz Deutschland von 2000 bis 2025 ab, pro Jahr. Das passt zu unserer Frage, wie sich die Kinobesuche seit 2000 verändert haben.
 - Er ist als CSV und XML maschinenlesbar und steht unter der offnen [Datenlizenz Deutschland Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0).
-- Die FFA-Daten enthalten ähnliche Kennzahlen, sind aber nur als PDF verfügbar. Ob das Statistische Bundesamt die Zahlen von der FFA übernimmt, prüfe ich in Task 6. 
+- Die FFA-Daten enthalten ähnliche Kennzahlen, sind aber nur als PDF verfügbar. Ob das Statistische Bundesamt die Zahlen von der FFA übernimmt, prüfe ich in Task 6.
+
+## Task 6 · Profile the dataset
+
+### Facts
+
+| Field | Value |
+|---|---|
+| Title | Kinos, Leinwände, Sitzplätze der Kinos, Filmbesuche, Durchschnittlicher Kino-Eintrittspreis, Einnahmen, Filmabgabe: Deutschland, Jahre |
+| Publisher | Statistisches Bundesamt (Destatis), auf GovData als Datenbereitsteller und veröffentlichende Stelle genannt |
+| Original publisher | Sehr wahrscheinlich die Filmförderungsanstalt (FFA): Sie erhebt Besuche und Umsätze monatlich bei den Kinos über die Filmabgabe ([FFA](https://www.ffa.de/marktdaten.html)), und die Tabelle enthält das Merkmal „Filmabgabe der Kinos an die FFA“. Destatis nennt die FFA aber nicht ausdrücklich als Quelle. |
+| Link or identifier | [GovData](LINK-ZUM-DATENSATZ) |
+| Formats | CSV, XML |
+| Size | TODO Dateien, TODO Zeilen, TODO Spalten |
+| Coverage | 2000–2025, Deutschland insgesamt, pro Jahr |
+| Last update | 12.10.2026 |
+| Update frequency | Nicht angegeben; bei Jahresdaten vermutlich jährlich |
+| Licence | [Datenlizenz Deutschland Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) |
