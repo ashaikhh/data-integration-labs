@@ -39,3 +39,11 @@ Ich wähle den Datensatz [Kinos, Leinwände, Sitzplätze der Kinos, Filmbesuche,
 | Last update | 12.10.2026 |
 | Update frequency | Nicht angegeben; bei Jahresdaten vermutlich jährlich |
 | Licence | [Datenlizenz Deutschland Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) |
+
+### Stars 
+
+Der Datensatz erreicht ⭐⭐⭐: Er steht unter offenen Lizenz (Datenlizenz Detuschland Namensnennung 2.0) , ist strukturiert und liegt als CSV in einem offenen, nicht proprietären Format vor. 
+
+Für den vierten Stern fehlen URIs: Einzelne Werte, Jahre oder Merkmale wie „Filmbesuche" haben keine eigene Web-Adresse, auf die andere verlinken könnten. 
+
+💡 Vergleich zur FFA: Deren PDFs hätten **null** Sterne, weil keine offene Lizenz angegeben ist. Mit Lizenz wäre es höchsten ⭐, weil PDF nicht strukturiert ist. 
