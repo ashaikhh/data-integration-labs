@@ -47,3 +47,22 @@ Der Datensatz erreicht ⭐⭐⭐: Er steht unter offenen Lizenz (Datenlizenz Det
 Für den vierten Stern fehlen URIs: Einzelne Werte, Jahre oder Merkmale wie „Filmbesuche" haben keine eigene Web-Adresse, auf die andere verlinken könnten. 
 
 💡 Vergleich zur FFA: Deren PDFs hätten **null** Sterne, weil keine offene Lizenz angegeben ist. Mit Lizenz wäre es höchsten ⭐, weil PDF nicht strukturiert ist. 
+
+### Open the Data
+
+Tool: LibreOffice Calc. Import mit Zeichensatz Windows-1252 und Semikolon als Trennzeichen.
+
+| Column | Min | Max | Mean |
+|---|---|---|---|
+| Filmbesuche (Mill.) | 38,1 (2020) | 177,9 (2001) | 121,2 |
+| Durchschnittlicher Kino-Eintrittspreis (EUR) | 5,41 (2000) | 10,05 (2025) | 7,53 |
+
+**Empty cells:** In den Datenzeilen (2000-2025) ist keine Zelle leer. Leer sind nur Zellen im Tabellenkopf, z.B. die ersten beiden Zellen der Jahresziele. 
+
+**Odd Thing:**
+- **Enconding:** Windows-1252 statt UTF-8. Ohne passende Einstellung werden Umlaute kaputt darstellt.
+- **Seperator und Dezimalzeichen:** Semikolon als Trennzeichen, Komma als Dezimalzeichen (152,5) typisch für deutsche CSV.Dateien.
+- **Struktur:** Die Tabelle ist „queer": Jahre stehen als Spalten, Merkmale als Zeilen. Für die Analyse muss ich sie umdrehen (eine Zeile pro Jahr).
+- **Kopf- und Fußzeichen:** Oben stehen 6 Zeilen mit Titel, unten Quelle, Anmerkungen und Copyright. Die gehören nicht zu den Daten.
+- **Einheiten:** stehen in einer eigenen Spalte (Anzahl, Mill., EUR, Mil.EUR). Filmbesuche sind in Millionen angegeben, nicht als ganze Zahl.
+- **Brüche in der Zeitreihe:** Laut Fußnote sind Kinos, Leinwände und Sitzplätze 2019 und ab 2025 nicht mit den Vorjahren vergleichbar, weil die Zählweise geändert wurde. 
