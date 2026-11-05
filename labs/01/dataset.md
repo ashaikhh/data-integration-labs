@@ -65,4 +65,19 @@ Tool: LibreOffice Calc. Import mit Zeichensatz Windows-1252 und Semikolon als Tr
 - **Struktur:** Die Tabelle ist „queer": Jahre stehen als Spalten, Merkmale als Zeilen. Für die Analyse muss ich sie umdrehen (eine Zeile pro Jahr).
 - **Kopf- und Fußzeichen:** Oben stehen 6 Zeilen mit Titel, unten Quelle, Anmerkungen und Copyright. Die gehören nicht zu den Daten.
 - **Einheiten:** stehen in einer eigenen Spalte (Anzahl, Mill., EUR, Mil.EUR). Filmbesuche sind in Millionen angegeben, nicht als ganze Zahl.
-- **Brüche in der Zeitreihe:** Laut Fußnote sind Kinos, Leinwände und Sitzplätze 2019 und ab 2025 nicht mit den Vorjahren vergleichbar, weil die Zählweise geändert wurde. 
+- **Brüche in der Zeitreihe:** Laut Fußnote sind Kinos, Leinwände und Sitzplätze 2019 und ab 2025 nicht mit den Vorjahren vergleichbar, weil die Zählweise geändert wurde.
+- **Fehlender Spaltenname:** Die Zeile mit den Jahren hat keinen Namen, die ersten beiden Zellen sind leer. Ich nenne sie "Jahr".
+
+### Data dictionary 
+
+Die Datei ist quer aufgebaut: Merkmale stehen in Zeilen, Jahre in Spalten. Nach dem Umdrehen wird jedes Merkmal zu einer Spalte. Ich beschreibe deshalb fünf Merkmale. 
+
+| Name | Meaning | Type and unit | Example value |
+|---|---|---|---|
+|Jahr (in der Datei ohne Namen) |Ganzzahl (Jahreszahl), keine Einheit|Kalenderjahr, auf das sich die Werte beziehen|2000|
+| Kinos | Anzahl der Kinos (Spielstätten) in Deutschland am Jahresende | Ganzzahl, Anzahl | 1865 (2000) |
+| Filmbesuche | Anzahl der Besuche (verkaufte Tickets) in Deutschland pro Jahr | Dezimalzahl, EUR | 152,5  (2000) |
+|Durchschnittlicher Kino-Eintrittspreis… | Durchschnittliche Preis eins Kinotickets im Jahr | Dezimalzahl, EUR | 5,41 (2000) |
+| Bruttoeinnahme aus dem Filmbesuch | Einnahmen der  Kinos aus dem Ticketverkauf pro Jahr, vor Abzug der Filmabgabe an die FFA | Dezimalzahl, Mill. EUR | 824,5 (2000) |
+
+**Documentation:** Destatis nennet die Merkmale mit ihren Einheiten, erklärt sie aber nicht: Ich habe weder in der CSV noch auf [GENESIS-Online](https://www-genesis.destatis.de/) Definitionen gefunden (Stand: 05.11.2026). 
