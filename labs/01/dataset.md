@@ -14,7 +14,7 @@
 Query: [GovData API](https://www.govdata.de/ckan/api/3/action/package_search?q=kino&rows=1)
 - **Hits (`count`):** 129. Die Website zeigt für „Kino“ nur 35 Treffer, die API sucht offenbar breiter.
 - **Title of the first hit:** Kino (Stadt Norderstedt, Land Schleswig-Holstein)
-- **Licence given for:** jede Datei einzeln. `license_id` ist leer, aber runter `resources` steht bei Datenlizenz Deutschland Namensnennung 2.9 (`http://dcat-ap.de/def/licenses/dl-by-de/2.0`). 
+- **Licence given for:** jede Datei einzeln. `license_id` ist leer, aber runter `resources` steht bei Datenlizenz Deutschland Namensnennung 2.0 (`http://dcat-ap.de/def/licenses/dl-by-de/2.0`). 
 
 ### My Choice 
 Ich wähle den Datensatz [Kinos, Leinwände, Sitzplätze der Kinos, Filmbesuche, Durchschnittlicher Kino-Eintrittspreis, Einnahmen, Filmabgabe: Deutschland, Jahre](https://www.govdata.de/suche/daten/kinos-leinwande-sitzplatze-der-kinos-filmbesuche-durchschnittlicher-kino-eintrittspreis-einnahm) vom Statistischen Bundesamt. 
@@ -81,3 +81,11 @@ Die Datei ist quer aufgebaut: Merkmale stehen in Zeilen, Jahre in Spalten. Nach 
 | Bruttoeinnahme aus dem Filmbesuch | Einnahmen der  Kinos aus dem Ticketverkauf pro Jahr, vor Abzug der Filmabgabe an die FFA | Dezimalzahl, Mill. EUR | 824,5 (2000) |
 
 **Documentation:** Destatis nennet die Merkmale mit ihren Einheiten, erklärt sie aber nicht: Ich habe weder in der CSV noch auf [GENESIS-Online](https://www-genesis.destatis.de/) Definitionen gefunden (Stand: 05.11.2026). 
+
+### License 
+
+**Open?**
+
+**What I must do when I reuse it:**
+
+**Attribution (TASL):**
