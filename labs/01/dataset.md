@@ -84,8 +84,11 @@ Die Datei ist quer aufgebaut: Merkmale stehen in Zeilen, Jahre in Spalten. Nach 
 
 ### License 
 
-**Open?**
+**Open?** Ja. Die Datenlizenz Deutschland Namensnennung 2.0 (DL-DE-BY-2.0) steht auf der [Liste der konformen Lizenzen](https://opendefinition.org/licenses/) der Open Definition. Sie erlaubt Nutzung , Veränderung und Weitergabe, auch kommerziell, verlangt aber, dass man die Quelle nennt. 
 
-**What I must do when I reuse it:**
+**What I must do when I reuse it:** Laut [Lizenztext](https://www.govdata.de/dl-de/by-2-0) muss der Quellenvermerk drei Angaben enthalten: den Bereitsteller (Statistisches Bundesamt), den Vermerk „Datenlizenz Deutschland – Namensnennung – Version 2.0“ mit Link zum Lizenztext und einen Link zum Datensatz. Weil wir die Tabelle umformen und mit Bevölkerungsdaten kombinieren, müssen wir außerdem angeben, dass die Daten geändert wurden. 
 
-**Attribution (TASL):**
+--**Attribution (TASL)**- „Kinos, Leinwände, Sitzplätze der Kinos, Filmbesuche, Durchschnittlicher Kino-Eintrittspreis, Einnahmen, Filmabgabe: Deutschland, Jahre" (Tabelle 21611-0002), © Statistisches Bundesamt (Destatis), 2026, nach Daten der Filmförderungsanstalt, [GENESIS-Online](https://www-genesis.destatis.de/), lizenziert unter [Datenlizenz Deutschland- Namensnennung - Version 2.0](https://www.govdata.de/dl-de/by-2-0). Daten wurden von uns umgeformt und mit weiteren Daten kombiniert. 
+
+### People 
+Nein. Der Datensatz enthält nur zusammengefasste Jahreszahlen für ganz Deutschland, z.B die Zahl der Kinos und Besuche. Es gibt keine Angaben zu einzelnen Personen, und bei so großen Summen kann man auch nicht auf einzelne Personen zurückschließen. Wir müssen deshalb nichts entfernen oder anonymisieren. 
