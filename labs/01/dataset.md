@@ -92,3 +92,17 @@ Die Datei ist quer aufgebaut: Merkmale stehen in Zeilen, Jahre in Spalten. Nach 
 
 ### People 
 Nein. Der Datensatz enthält nur zusammengefasste Jahreszahlen für ganz Deutschland, z.B die Zahl der Kinos und Besuche. Es gibt keine Angaben zu einzelnen Personen, und bei so großen Summen kann man auch nicht auf einzelne Personen zurückschließen. Wir müssen deshalb nichts entfernen oder anonymisieren. 
+
+ Principle | Rating | Evidence |
+|---|---|---|
+| F1 | ~ | Kein DOI. Die Tabelle hat aber einen festen Code (`21611-0002`) bei Destatis und eine Seite auf GovData. Ob die URL dauerhaft stabil bleibt, ist nicht zugesagt. |
+| F2 | ~ | GovData nennt Titel, Herausgeber, letzte Änderung (12.10.2026), Formate und Lizenz. Die Beschreibung wiederholt aber nur den Titel. |
+| F4 | ✓ | Auf [GovData](https://www.govdata.de/) mit dem Suchwort „Kino“ gefunden (Task 5), außerdem in GENESIS-Online. |
+| A1 | ✓ | CSV per HTTPS heruntergeladen, ohne Login. |
+| I1 | ✓ | CSV und XML, beide offen und maschinenlesbar. Die CSV ist aber schwer zu verarbeiten: Windows-1252, quer aufgebaut, mit Kopf- und Fußzeilen. |
+| I2, I3 | ~ | Jahre als vierstellige Zahlen (passt zu ISO 8601). Das Gebiet steht nur als Text „Deutschland“, nicht als Code wie `DE` (ISO 3166). Die Quelle FFA wird genannt, aber nicht verlinkt. Keine Links zu verwandten Daten. |
+| R1 | ~ | Einheiten sind angegeben und Fußnoten erklären die Brüche 2019 und ab 2025. Es gibt aber keine Definitionen der Merkmale (siehe Data dictionary). |
+| R1.1 | TODO | |
+| R1.2 | ~ | Die CSV nennt die Filmförderungsanstalt als Quelle. Destatis veröffentlicht also eine Kopie. Wie die FFA die Daten erhebt, steht nicht beim Datensatz, sondern nur auf der [FFA-Seite](https://www.ffa.de/marktdaten.html). |
+| R1.3 | ✓ | GovData beschreibt Datensätze nach DCAT-AP.de: Die API gibt Lizenzen als DCAT-AP-URIs an, z. B. `http://dcat-ap.de/def/licenses/dl-by-de/2.0` (Task 5). |
+
