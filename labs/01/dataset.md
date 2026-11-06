@@ -102,7 +102,7 @@ Nein. Der Datensatz enthält nur zusammengefasste Jahreszahlen für ganz Deutsch
 | I1 | ✓ | CSV und XML, beide offen und maschinenlesbar. Die CSV ist aber schwer zu verarbeiten: Windows-1252, quer aufgebaut, mit Kopf- und Fußzeilen. |
 | I2, I3 | ~ | Jahre als vierstellige Zahlen (passt zu ISO 8601). Das Gebiet steht nur als Text „Deutschland“, nicht als Code wie `DE` (ISO 3166). Die Quelle FFA wird genannt, aber nicht verlinkt. Keine Links zu verwandten Daten. |
 | R1 | ~ | Einheiten sind angegeben und Fußnoten erklären die Brüche 2019 und ab 2025. Es gibt aber keine Definitionen der Merkmale (siehe Data dictionary). |
-| R1.1 | ✓ |Lizenz klar auf GovData gennant und in der [API](https://www.govdata.de/ckan/api/3/action/package_search?q=kino&rows=1) machinenles als URI angegeben (`license` unter `resources`).|
+| R1.1 | ~ | |
 | R1.2 | ~ | Die CSV nennt die Filmförderungsanstalt als Quelle. Destatis veröffentlicht also eine Kopie. Wie die FFA die Daten erhebt, steht nicht beim Datensatz, sondern nur auf der [FFA-Seite](https://www.ffa.de/marktdaten.html). |
 | R1.3 | ✓ | GovData beschreibt Datensätze nach DCAT-AP.de: Die API gibt Lizenzen als DCAT-AP-URIs an, z. B. `http://dcat-ap.de/def/licenses/dl-by-de/2.0` (Task 5). |
 
@@ -114,4 +114,52 @@ Was ich für Meilenstein 2 besser machen will:
 
 1. **Identifikator:** unseren Datensatz z.B. auf Zenodo veröffentlichen und so einen DOI bekommen.
 2. **Dokumentation:** ein Data dictionary mit Definitionen jeder Spalte und einer Methodenbeschreibung mitliefern.
-3. **Format:** eine saubere CSV in UTF-8, eine Zeile pro Jahr, ohne Kopf- und Fußzeilen, mit Standardcodes (z.B. `DE`) und Links zu den Originalquellen. 
+3. **Format:** eine saubere CSV in UTF-8, eine Zeile pro Jahr, ohne Kopf- und Fußzeilen, mit Standardcodes (z.B. `DE`) und Links zu den Originalquellen.
+
+### Task 8 · Plan what to combine it with
+
+### Second Source 
+
+Bedie Quellen lassen sich über das **Jahr** verbinden:
+| Kinodaten (21611-0002) | Bevölkerung (12411-0001) |
+|---|---|
+| `2019` | `31.12.2019` |
+| `2020` | `31.12.2020` |
+| `2021` | `31.12.2021` |
+
+Die Schlüssel passen so nicht zusammen: In den Kinodaten ist das Jahr eine Spaltenüberschrift, in den Bevölkerungsdaten ein Stichtag als Datum. Vorher muss ich die Kinotabelle umdrehen (eine Zeile pro Jahr) und aus dem Stichtag das Jahr herauslösen (`31.12.2019` -> `2019`)
+
+### Granularity 
+
+Beide Quellen sind jährlich und gelten für ganz Deutschland. Aber: Filmbesuche sind eine **Summe über das Jahr**, die Bevölkerung ist ein **Stand am 31.12.** Ich nehme den Stand am Jahresende als Näherung für die Bevölkerung im Jahr. Genauer wäre der Jahresanfang und Jahresende. Außerdem sind die Filmbesuche im Millionen angegeben, die Bevölkerung in Personen: Ich rechne beides in dieselbe Einheit um. 
+
+### Questions
+
+1. Wie haben sich die Kinobesuche pro Einwohner von 2000 bis 2005 entwickelt, und ist der Rückgang nur ein Effekt der Bevölkerungsentwicklung?
+2. Wie stark ist der Einbruch 2020/2021 pro Einwohner, und wie weit hat sich er Wert bis 2025 erholt?
+3. Wie viel Geld gibt jeder Einwohner in Durchschnitt pro Jahr im Kino aus (Bruttoeinnahmen pro Kopf), und wie verändert sich das mit dem steigenden Eintrittspreis?
+
+### Licenses 
+
+Ja. Beide Quellen stehen unter DL-DE-BY-2.0, die Nutzung, Veränderung und Kombination erlaubt. Die kombinierte Tabelle können wir ebenfalls unter DL-DE-BY-2.0 veröffentlichen. Wir müssen beide Datensätze nennen. (Destatis, mit Lizenzvermerkt und Link), die FFA als Originalquelle der Kinodaten erwähnen und angeben, dass wir die Daten verändert haben. 
+
+### Next steps 
+
+```mermaid
+flowchart TD
+A[Kinodaten 21611-0002 als CSV laden] --> C[Encoding Windows-1252, Semikolon, Dezimalkomma einlesen]
+    B[Bevölkerung 12411-0001 als CSV laden] --> D[Kopf- und Fußzeilen entfernen]
+    C --> E[Kopf- und Fußzeilen entfernen, Tabelle umdrehen: eine Zeile pro Jahr]
+    D --> F[Jahr aus Stichtag 31.12.JJJJ herauslösen]
+    E --> G[Einheiten angleichen: Mill. in Personen]
+    F --> G
+    G --> H[Join über Jahr]
+    H --> I[Besuche pro Einwohner berechnen]
+    I --> J[Brüche markieren: 2019, ab 2025, Zensus-Korrekturen]
+```
+### Verdict
+
+Ja, ich würde unser Projekt auf diesem Datensatz aufbauen: Er ist offen, amtlich, deckt 2000-2025 lückenlos ab und passt genau zu unserer Frage. Das größte Risiko sind **Brüche in den Zeitreihen**: Bei den Kino ändert sich die Zählweise 2019 und ab 2025, und die Bevölkerungszahlen wurden nach den Zensus-Erhebungen 2011 und 2022 korrigiert. Außerdem erklären die Daten zwar, **das** die Besuche sinken, aber nicht **warum**: Für den Einfluss von Streaming bräuchten wir eine dritte Quelle.
+
+
+
