@@ -10,6 +10,7 @@ In diesem Repository sammle ich meine Lösungen zu den Labs im Kurs Data Integra
 | Lab | Thema | Ordner |
 |----:|-------|--------|
 | 01 | GitHub, Markdown, Open Source und Open Data | [labs/01/](labs/01/) |
+| 02 | Agentic Coding | [labs/04/]() |
 
 ## Licence 
 Der Code und die Texte in diesem Repository stehen unter der [MIT-Lizenz] ([LICENSE](https://github.com/ashaikhh/data-integration-labs/edit/main/README.md#:~:text=T-,LICENSE,-README.md)). 
