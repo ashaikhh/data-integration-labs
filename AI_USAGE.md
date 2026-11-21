@@ -1,6 +1,6 @@
 ## AI Usage
 
-## 2026-11-21 · Lab 04, Task 1: Agent setup
+## 21-10-2026 · Lab 04, Task 1: Agent setup
 
 - **Tool und Modell:** Claude (Anthropic), Claude Opus 5.5, as a tutor; tested agent: GitHub Copilot in VS Code (Copilot Fusion)
 - **Prompt:** Step-by-step guidance for setting up Copilot and testing its permissions; help with a broken settings.json.
