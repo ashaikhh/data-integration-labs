@@ -4,7 +4,7 @@ In diesem Repository sammle ich meine Lösungen zu den Labs im Kurs Data Integra
 ## Über mich 
 - GitHub-Profil: [ashaikhh](https://github.com/ashaikhh)
 - Kurs-Repository: [Data Integration](https://breuert.github.io/data-integration/)
-- Projekt- Repository meines Teams: folgt
+- Projekt- Repository meines Teams: [data-integration-projekt](https://github.com/chaymaeloukili/data-integration-projekt)
 
 ## Labs 
 | Lab | Thema | Ordner |
