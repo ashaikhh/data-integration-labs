@@ -27,4 +27,7 @@
 - **Abgelehnt:** –
 - **Geprüft:** Preview angesehen und unter https://github.com/USERNAME kontrolliert, dass die README im Profil erscheint.
 
+## 24.11.2026 · Lab 04, Tasks 4-7: Pair Work 
+
+The AI use of Tasks 2 to 7 is logged in our pair's repository: [co2-pipeline/AI_USAGE.md](https://github.com/HafssaZainou/co2-pipeline/blob/main/AI_USAGE.md)
 
